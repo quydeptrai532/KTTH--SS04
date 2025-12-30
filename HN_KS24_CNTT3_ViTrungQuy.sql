@@ -9,7 +9,7 @@ CREATE TABLE Student (
     student_phone VARCHAR(11) NOT NULL
 );
 
--- Bảng Course (sửa tên Courge → Course)
+-- Bảng Course
 CREATE TABLE Course (
     course_id INT PRIMARY KEY AUTO_INCREMENT,
     course_name VARCHAR(100) NOT NULL,
@@ -44,7 +44,7 @@ VALUES
 ('IT04',6),
 ('IT05',7);
 
--- Insert Enrollment (sửa course_id cho đúng)
+-- Insert Enrollment
 INSERT INTO Enrollment (student_id, course_id, grade)
 VALUES
 (1, 1, 7.5),
